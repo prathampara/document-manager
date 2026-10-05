@@ -2,7 +2,7 @@
 
 React + TypeScript · Spring Boot · Spring Data JPA · PostgreSQL · Docker · JUnit
 
-Database: `document_manager` · user `postgres` · password ${DB_PASSWORD}
+Database: `document_manager` · user `postgres` · password ${DB_PASSWORD} 
 
 ## Option A: everything in Docker
     docker compose up --build
