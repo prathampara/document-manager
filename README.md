@@ -2,7 +2,7 @@
 
 React + TypeScript · Spring Boot · Spring Data JPA · PostgreSQL · Docker · JUnit
 
-Database: `document_manager` · user `postgres` · password `jonjones`
+Database: `document_manager` · user `postgres` · password ${DB_PASSWORD}
 
 ## Option A: everything in Docker
     docker compose up --build
@@ -30,6 +30,6 @@ The `documents` table is created automatically on first start.
 | DELETE | /api/documents/{id} | Delete |
 
 ## Troubleshooting
-- `password authentication failed`: your local Postgres uses a different password for `postgres`. Change it with `ALTER USER postgres PASSWORD 'jonjones';` or edit `backend/src/main/resources/application.yml`.
+- `password authentication failed`: your local Postgres uses a different password for `postgres`. Change it with `ALTER USER postgres PASSWORD ${DB_PASSWORD};` or edit `backend/src/main/resources/application.yml`.
 - `database "document_manager" does not exist`: run step 1 of Option B.
 - `port 5432 already in use` with Docker: the compose file already maps Postgres to 5433, so check ports 3000 and 8080 instead.
