@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/document_manager
     username: postgres
-    password: jonjones
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
